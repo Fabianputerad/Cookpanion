@@ -35,11 +35,9 @@ public class detailrecipe extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detailrecipe);
-        savebtn = findViewById(R.id.savebtn);
         foodname = findViewById(R.id.foodname);
         fooddesc = findViewById(R.id.foodDesc);
         foodImg = findViewById(R.id.gambarMakan);
-        savebtnDetail = findViewById(R.id.savebtn);
         Intent intent=getIntent();
         String foodName=intent.getStringExtra("foodname");
         String foodDesc=intent.getStringExtra("fooddesc");

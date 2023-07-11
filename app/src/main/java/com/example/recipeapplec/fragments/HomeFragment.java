@@ -37,10 +37,21 @@ public class HomeFragment extends Fragment {
 //        toRecipe = view.findViewById(R.id.toRecipe);
 //        toSaved = view.findViewById(R.id.toSaved);
         cook = view.findViewById(R.id.btncook);
-        Intent tor = new Intent(getContext(), RecipeFragment.class);
+
+        cook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent tor = new Intent(getContext(), RecipeFragment.class);
+                startActivity(tor);
+            }
+        });
 
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_homepage, container, false);
+
+
     }
+
+
 }
